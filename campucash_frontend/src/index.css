@@ -1,0 +1,48 @@
+/* Forward all styles from the styles/ folder */
+@import './styles/index.css';
+
+/* Base resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+css:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  --primary: #0f172a;
+  --accent: #e2e8f0;
+
+  --border: #e5e7eb;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+
+  --primary: #f8fafc;
+  --accent: #1e293b;
+
+  --border: #1e293b;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.border-border {
+  border-color: var(--border);
+}
